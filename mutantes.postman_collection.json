@@ -9,7 +9,23 @@
 			"name": "list",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "44.201.193.66:8080/xmen/mutantes/list/",
+					"host": [
+						"44",
+						"201",
+						"193",
+						"66"
+					],
+					"port": "8080",
+					"path": [
+						"xmen",
+						"mutantes",
+						"list",
+						""
+					]
+				}
 			},
 			"response": []
 		},
@@ -17,15 +33,54 @@
 			"name": "stats",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "44.201.193.66:8080/xmen/mutantes/stats",
+					"host": [
+						"44",
+						"201",
+						"193",
+						"66"
+					],
+					"port": "8080",
+					"path": [
+						"xmen",
+						"mutantes",
+						"stats"
+					]
+				}
 			},
 			"response": []
 		},
 		{
 			"name": "mutant",
 			"request": {
-				"method": "GET",
-				"header": []
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"dna\": [\"AAAA\",\"TTTT\",\"GTCA\",\"GTGG\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "44.201.193.66:8080/xmen/mutantes/mutant",
+					"host": [
+						"44",
+						"201",
+						"193",
+						"66"
+					],
+					"port": "8080",
+					"path": [
+						"xmen",
+						"mutantes",
+						"mutant"
+					]
+				}
 			},
 			"response": []
 		}
